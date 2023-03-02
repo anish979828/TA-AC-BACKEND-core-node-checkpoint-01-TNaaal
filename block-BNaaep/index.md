@@ -5,6 +5,21 @@ writeCode
 Create a http server which should run on port 5000 and handle following routes:-
 
 1. GET request on index path (`/`) should render html template resembling index.png from assets directory which is attached
+```js
+
+let http = require("http");
+
+let server = http.createServer(handleRequest);
+
+function handleRequest(req,res){
+
+};
+
+server.listen(5000,() => {
+    console.log("The server is listening is on port 5000")
+})
+
+```
 
 2. GET request on `/about` path should render html template resembling about.png from assets directory which is attached
 
